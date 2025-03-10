@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .app-container {
+    text-align: center;
+    padding: 50px;
+    min-height: 100vh;
+    background: linear-gradient(to right, #007bff, #00c6ff);
+    color: white;
+  }
+
+  .support-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .support-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .support-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    height: 40vh;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .support-header {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .support-header h3 {
+    margin: 0;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .support-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .placeholder-text {
+    color: gray;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  .chat-message {
+    background: #007bff;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 80%;
+    align-self: flex-start;
+  }
+
+  .support-input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-top: 1px solid #ddd;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .support-box {
+      width: 90%;
+      right: 5%;
+    }
+  }
+  

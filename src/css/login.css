@@ -1,0 +1,68 @@
+/* 🌎 Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* 🏠 Login Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+  }
+  
+  /* 📦 Login Form */
+  .login-form {
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* 🏷 Input Fields */
+  .login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  /* 🔘 Login Button */
+  .login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .login-form button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ❌ Error Message */
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+  
+  /* 📱 Responsive Design */
+  @media screen and (max-width: 768px) {
+    .login-form {
+      width: 90%;
+    }
+  }
+  
