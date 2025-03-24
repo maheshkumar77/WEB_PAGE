@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loader Example</title>
+  <style>
+    /* CSS Code */
+    .loader {
+      width: auto;
+      aspect-ratio: 1;
+      --c: no-repeat repeating-linear-gradient(90deg, #000 0 calc(100% / 7), #0000 0 calc(200% / 7));
+      background: var(--c), var(--c), var(--c), var(--c);
+      background-size: 140% 26%;
+      animation: l26 0.75s infinite linear;
+      position: relative;
+      text-align: center;
+    }
+
+    /* Keyframe animation */
+    @keyframes l26 {
+      0%, 5% { background-position: 0 calc(0*100%/3), 0 calc(1*100%/3), 0 calc(2*100%/3), 0 calc(3*100%/3); }
+      20% { background-position: 50% calc(0*100%/3), 0 calc(1*100%/3), 0 calc(2*100%/3), 0 calc(3*100%/3); }
+      40% { background-position: 100% calc(0*100%/3), 50% calc(1*100%/3), 0 calc(2*100%/3), 0 calc(3*100%/3); }
+      60% { background-position: 100% calc(0*100%/3), 100% calc(1*100%/3), 50% calc(2*100%/3), 0 calc(3*100%/3); }
+      80% { background-position: 100% calc(0*100%/3), 100% calc(1*100%/3), 100% calc(2*100%/3), 50% calc(3*100%/3); }
+      95%, 100% { background-position: 100% calc(0*100%/3), 100% calc(1*100%/3), 100% calc(2*100%/3), 100% calc(3*100%/3); }
+    }
+
+    /* Styling for the text */
+    .mm {
+      font-size: 180px;
+      color: transparent; /* Make text transparent */
+      background: var(--c); /* Apply the same gradient as the loader */
+      background-size: 140% 26%; /* Match the loader background size */
+      background-position: 0 calc(0*100%/3), 0 calc(1*100%/3), 0 calc(2*100%/3), 0 calc(3*100%/3); /* Start position */
+      animation: l26 0.75s infinite linear; /* Apply the same animation as the loader */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-background-clip: text; /* Make sure the background is clipped to the text */
+      background-clip: text; /* For modern browsers */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HTML: Loader with animated text -->
+  <div class="loader">
+    <h1 class="mm">mahesh kumar sahu</h1>
+  </div>
+
+</body>
+</html>
